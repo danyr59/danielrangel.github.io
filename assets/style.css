@@ -781,57 +781,91 @@ p{
     margin-left: 10px;
   }
 }
+.projects-section{
+  width: 100%;
+  height: auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:0px;
+  margin-top: 100px;
+  padding:0px;
+  
+}
 .projects{
   
+  position:relative;
   width:100%;
+  height:70vh;
+  margin:0px auto;
+  margin-top:100px;
+  margin-bottom: 20px;
+  padding-top:10px;
+  padding-bottom: 20px;
   
-  margin-bottom: 100px;
-  padding-top: 20px;
-  margin:auto;
 }
 @media(max-width: 768px)
 {
   .projects{
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
     border-radius: var(--border-radius);
-    
   }
 }
 .project-image{
-  width: 600px;
-  height:400px;
-  float: left;
+  width: 60%;
+  height: auto;
+  
   border-radius: var(--border-radius);
-  background-color:black;
+  position:absolute;
+  left:0px;
+  top:0px;
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   z-index: 1;
 }
+.project-image a{
+  width: 100%;
+  height:auto;
+}
+.project-image a div{
+  width:100%;
+  height:auto;
+  
+}
+.project-image a div img{
+  width:100%;
+  height:auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+}
+
 @media(max-width: 768px){
   .project-image{
     width: 100%;
     float:none;
-    opacity: 0.3;
+    opacity: 0.2;
+    
   }
 }
 .project-content{
+  
   width: 60%;
   float: right;
+  height:auto;
   text-align: right;
-  position: relative;
-  top:-350px;
+  position:absolute;
+  right:0px;
+  top:0px;
   z-index: 2;
 
 }
+
 @media(max-width: 768px){
   .project-content{
     width:95%;
-    display: relative;
-    top: -380px;
-    padding-right: 5vw;
-    
   }
 
 }
+
 .project-links a{
   display:inline-block;
 }
@@ -863,6 +897,21 @@ p{
   list-style: none;
   padding: 0px;
   justify-content: flex-end;
+}
+.project-tech-list-left{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 25px 0px 10px;
+  list-style: none;
+  padding: 0px;
+  justify-content: flex-star;
+}
+.project-tech-list-left li{
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  white-space: nowrap;
+  margin: 0px 20px 5px 0px;
 }
 .project-tech-list li{
   color: var(--light-slate);
@@ -897,6 +946,7 @@ p{
   background-color: var(--light-navy);
   color: var(--light-slate);
   width: 100%;
+  
 }
 .project-description:hover{
   box-shadow: 0 10px 30px -15px var(--dark-navy);
@@ -935,7 +985,14 @@ p{
   font-weight: 400;;
   
 }
-.project-image:hover {
-  top:10px;
-  left:10px;
+.par1{
+  right:unset;
+  left:0px;
+  top:0px;
+  text-align:left;
+}
+.par2{
+  left:unset;
+  right:0px;
+  top:0px;
 }
