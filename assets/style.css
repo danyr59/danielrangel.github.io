@@ -69,12 +69,7 @@ body {
   padding:0px;
   display:flex;
   width:100vw;
-  /*grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-    "header header header"
-    ".  .   ."
-    ".  .    .";*/
+  
 }
 #imagen-3seg{
   position: absolute;
@@ -120,23 +115,6 @@ body {
   }
   
 }
-
-/*
-.headers::after{
-  content:"daniel";
-  position: fixed;
-  opacity: 0;
-  top: -20px;
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  height: 200px;
-  background-color: red;
-}
-.headers:hover::after{
-  opacity: 1;
-  top: 0px;
-}*/
-
 
 .navg{
   display: flex;
@@ -545,9 +523,12 @@ main{
   justify-content: center;
   flex-direction:column;
   align-items: flex-start;
-  height:100vh;
+  
+  min-height: 100vh;
+ 
   
 }
+
 section{
   margin:0px auto;
   padding: 100px 0px;
@@ -1141,9 +1122,3 @@ footer{
   font-size: clamp(10px, 4vw,12px);
 }
 
-/*
-.welcome-sec-2{
-  height:auto;
-  min-height: 100vh;
-}
-*/
