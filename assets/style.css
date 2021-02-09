@@ -545,7 +545,8 @@ main{
   justify-content: center;
   flex-direction:column;
   align-items: flex-start;
-  min-height: 100vh;
+  height:100vh;
+  
 }
 section{
   margin:0px auto;
@@ -1139,3 +1140,10 @@ footer{
   color: green;
   font-size: clamp(10px, 4vw,12px);
 }
+
+/*
+.welcome-sec-2{
+  height:auto;
+  min-height: 100vh;
+}
+*/
